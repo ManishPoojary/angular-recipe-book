@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-recipe-book';
+  currRoute='Recipes';
+  routeChanged(eve){
+    this.currRoute=eve;
+
+  }
 }

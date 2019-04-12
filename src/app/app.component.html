@@ -1,9 +1,9 @@
-<app-header></app-header>
+<app-header (rC)="routeChanged($event)"></app-header>
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <app-recipes></app-recipes> 
-      <app-shopping-list></app-shopping-list>
+      <app-recipes *ngIf="currRoute=='Recipes'" ></app-recipes> 
+      <app-shopping-list *ngIf="currRoute=='Shopping'"></app-shopping-list>
     </div>
   </div>
 </div>

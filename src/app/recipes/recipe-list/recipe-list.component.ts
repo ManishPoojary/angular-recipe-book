@@ -8,6 +8,7 @@ import { Recipe } from '../recipe.model';
 })
 export class RecipeListComponent implements OnInit {
   recipes: Recipe[] = [
+    new Recipe('Bread ','Test','https://www.kroger.com/asset/5bfbfe3b9da07c0aa601e6bb?data=1'),
     new Recipe('Bread ','Test','https://www.kroger.com/asset/5bfbfe3b9da07c0aa601e6bb?data=1')
   ];
   constructor() { }
